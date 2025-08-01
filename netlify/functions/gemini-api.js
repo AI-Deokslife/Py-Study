@@ -40,7 +40,7 @@ exports.handler = async (event, context) => {
     const requestBody = JSON.parse(event.body);
     
     // Gemini API URL
-    const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${apiKey}`;
+    const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
 
     // Gemini API 호출
     const response = await fetch(apiUrl, {
